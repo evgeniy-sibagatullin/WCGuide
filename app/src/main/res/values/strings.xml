@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WCGuide</string>
+    <string name="humans">Humans</string>
+    <string name="orcs">Orcs</string>
+    <string name="night_elves">Night Elves</string>
+    <string name="undead">Undead</string>
+</resources>
