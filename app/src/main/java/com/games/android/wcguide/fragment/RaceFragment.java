@@ -1,4 +1,4 @@
-package com.games.android.wcguide;
+package com.games.android.wcguide.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,7 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import java.util.ArrayList;
+import com.games.android.wcguide.R;
+import com.games.android.wcguide.adapter.HeroAdapter;
+import com.games.android.wcguide.model.Hero;
+
+import java.util.List;
 
 public abstract class RaceFragment extends Fragment {
 
@@ -24,6 +28,6 @@ public abstract class RaceFragment extends Fragment {
         return rootView;
     }
 
-    protected abstract ArrayList<String> getRaceHeroes();
+    protected abstract List<Hero> getRaceHeroes();
 
 }

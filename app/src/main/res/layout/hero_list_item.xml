@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="8dp">
+    android:layout_height="@dimen/hero_list_item_height"
+    android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/hero_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+    <FrameLayout
+        android:layout_width="@dimen/hero_list_item_height"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/hero_avatar"
+            android:layout_width="@dimen/hero_avatar_size"
+            android:layout_height="@dimen/hero_avatar_size"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/or_tc"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/hero_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+</LinearLayout>

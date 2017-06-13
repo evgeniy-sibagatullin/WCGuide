@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="hero_list_item_height">128dp</dimen>
+    <dimen name="hero_avatar_size">112dp</dimen>
+</resources>

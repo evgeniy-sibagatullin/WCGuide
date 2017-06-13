@@ -1,16 +1,22 @@
-package com.games.android.wcguide;
+package com.games.android.wcguide.adapter;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-class RacesPagerAdapter extends FragmentPagerAdapter {
+import com.games.android.wcguide.fragment.HumansFragment;
+import com.games.android.wcguide.fragment.NightElvesFragment;
+import com.games.android.wcguide.fragment.OrcsFragment;
+import com.games.android.wcguide.R;
+import com.games.android.wcguide.fragment.UndeadFragment;
+
+public class RacesPagerAdapter extends FragmentPagerAdapter {
 
     private static final int RACES_COUNT = 4;
     private Context mContext;
 
-    RacesPagerAdapter(FragmentManager fm, Context context) {
+    public RacesPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         mContext = context;
     }
