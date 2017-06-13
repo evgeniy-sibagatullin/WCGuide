@@ -6,21 +6,24 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public abstract class RaceFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.race_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.hero_list_fragment, container, false);
 
-        TextView textView = (TextView) rootView.findViewById(R.id.race_title_text);
-        textView.setText(getRaceTitle());
+        HeroAdapter heroAdapter = new HeroAdapter(getActivity(), getRaceHeroes());
+        ListView listView = (ListView) rootView.findViewById(R.id.race_hero_list);
+        listView.setAdapter(heroAdapter);
 
         return rootView;
     }
 
-    protected abstract String getRaceTitle();
+    protected abstract ArrayList<String> getRaceHeroes();
 
 }
