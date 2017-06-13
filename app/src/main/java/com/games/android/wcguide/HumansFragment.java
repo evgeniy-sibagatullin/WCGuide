@@ -10,6 +10,7 @@ public class HumansFragment extends RaceFragment {
         heroes.add(getString(R.string.hu_pa));
         heroes.add(getString(R.string.hu_am));
         heroes.add(getString(R.string.hu_mk));
+        heroes.add(getString(R.string.hu_bm));
         return heroes;
     }
 }

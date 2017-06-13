@@ -10,6 +10,7 @@ public class NightElvesFragment extends RaceFragment {
         units.add(getString(R.string.ne_dh));
         units.add(getString(R.string.ne_kg));
         units.add(getString(R.string.ne_pm));
+        units.add(getString(R.string.ne_wa));
         return units;
     }
 }

@@ -10,6 +10,7 @@ public class OrcsFragment extends RaceFragment {
         heroes.add(getString(R.string.or_bm));
         heroes.add(getString(R.string.or_fs));
         heroes.add(getString(R.string.or_tc));
+        heroes.add(getString(R.string.or_sh));
         return heroes;
     }
 }

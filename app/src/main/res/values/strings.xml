@@ -9,16 +9,20 @@
     <string name="hu_pa">Paladin</string>
     <string name="hu_am">Archmage</string>
     <string name="hu_mk">Mountain King</string>
+    <string name="hu_bm">Blood Mage</string>
 
     <string name="or_bm">Blademaster</string>
     <string name="or_fs">Far Seer</string>
     <string name="or_tc">Tauren Chieftain</string>
+    <string name="or_sh">Shadow Hunter</string>
 
     <string name="ne_dh">Demon Hunter</string>
     <string name="ne_kg">Keeper of the Groove</string>
     <string name="ne_pm">Priestess of the Moon</string>
+    <string name="ne_wa">Warden</string>
 
     <string name="ud_dk">Death Knight</string>
     <string name="ud_dl">Dread Lord</string>
     <string name="ud_li">Lich</string>
+    <string name="ud_cl">Crypt Lord</string>
 </resources>

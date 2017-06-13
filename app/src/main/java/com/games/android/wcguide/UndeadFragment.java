@@ -10,6 +10,7 @@ public class UndeadFragment extends RaceFragment {
         units.add(getString(R.string.ud_dk));
         units.add(getString(R.string.ud_dl));
         units.add(getString(R.string.ud_li));
+        units.add(getString(R.string.ud_cl));
         return units;
     }
 }
