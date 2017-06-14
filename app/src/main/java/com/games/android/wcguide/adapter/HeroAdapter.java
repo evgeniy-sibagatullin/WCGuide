@@ -2,6 +2,7 @@ package com.games.android.wcguide.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,10 +18,12 @@ import java.util.List;
 public class HeroAdapter extends ArrayAdapter<Hero> {
 
     private Context mContext;
+    private int mTextColorResId;
 
-    public HeroAdapter(Context context, List<Hero> units) {
+    public HeroAdapter(Context context, List<Hero> units, int textColorResId) {
         super(context, 0, units);
         mContext = context;
+        mTextColorResId = textColorResId;
     }
 
     @NonNull
@@ -38,6 +41,9 @@ public class HeroAdapter extends ArrayAdapter<Hero> {
         TextView heroName = (TextView) listItemView.findViewById(R.id.hero_name);
         heroName.setText(mContext.getString(hero.getHeroName()));
 
+        int textColor = ContextCompat.getColor(getContext(), mTextColorResId);
+        heroName.setTextColor(textColor);
+
         ImageView heroAvatar = (ImageView) listItemView.findViewById(R.id.hero_avatar);
         heroAvatar.setImageResource(hero.getImageResourceId());
 
@@ -45,5 +51,4 @@ public class HeroAdapter extends ArrayAdapter<Hero> {
 
         return listItemView;
     }
-
 }

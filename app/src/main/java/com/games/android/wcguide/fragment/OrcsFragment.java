@@ -17,4 +17,9 @@ public class OrcsFragment extends RaceFragment {
         heroes.add(new Hero(R.string.or_sh, R.drawable.or_sh, R.raw.or_sh));
         return heroes;
     }
+
+    @Override
+    protected int getTextColorResId() {
+        return R.color.colorOr;
+    }
 }

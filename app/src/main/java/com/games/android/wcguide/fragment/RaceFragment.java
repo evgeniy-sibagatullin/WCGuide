@@ -21,7 +21,7 @@ public abstract class RaceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.hero_list_fragment, container, false);
 
-        HeroAdapter heroAdapter = new HeroAdapter(getActivity(), getRaceHeroes());
+        HeroAdapter heroAdapter = new HeroAdapter(getActivity(), getRaceHeroes(), getTextColorResId());
         ListView listView = (ListView) rootView.findViewById(R.id.race_hero_list);
         listView.setAdapter(heroAdapter);
 
@@ -29,5 +29,7 @@ public abstract class RaceFragment extends Fragment {
     }
 
     protected abstract List<Hero> getRaceHeroes();
+
+    protected abstract int getTextColorResId();
 
 }

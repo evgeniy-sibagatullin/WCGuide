@@ -17,4 +17,9 @@ public class UndeadFragment extends RaceFragment {
         heroes.add(new Hero(R.string.ud_cl, R.drawable.ud_cl, R.raw.ud_cl));
         return heroes;
     }
+
+    @Override
+    protected int getTextColorResId() {
+        return R.color.colorUd;
+    }
 }

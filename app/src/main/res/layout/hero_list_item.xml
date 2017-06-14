@@ -4,12 +4,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/hero_list_item_height"
+    android:background="@color/colorPrimaryDark"
     android:orientation="horizontal">
 
     <FrameLayout
         android:layout_width="@dimen/hero_list_item_height"
-        android:layout_height="match_parent"
-        android:background="@android:color/black">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/hero_avatar"
@@ -22,15 +22,26 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <TextView
             android:id="@+id/hero_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textSize="@dimen/hero_name_font_size"
+            android:textColor="@color/colorPrimary"/>
 
     </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:src="@drawable/ic_play_arrow"/>
 
 </LinearLayout>

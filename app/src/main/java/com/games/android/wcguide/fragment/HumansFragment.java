@@ -17,4 +17,9 @@ public class HumansFragment extends RaceFragment {
         heroes.add(new Hero(R.string.hu_bm, R.drawable.hu_bm, R.raw.hu_bm));
         return heroes;
     }
+
+    @Override
+    protected int getTextColorResId() {
+        return R.color.colorHu;
+    }
 }

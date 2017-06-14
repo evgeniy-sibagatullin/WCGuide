@@ -17,4 +17,9 @@ public class NightElvesFragment extends RaceFragment {
         heroes.add(new Hero(R.string.ne_wa, R.drawable.ne_wa, R.raw.ne_wa));
         return heroes;
     }
+
+    @Override
+    protected int getTextColorResId() {
+        return R.color.colorNe;
+    }
 }
